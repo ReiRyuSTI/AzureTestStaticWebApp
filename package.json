@@ -4,8 +4,8 @@
   "scripts": {
     "start": "sirv ./src public --cors --single --no-clear --port 8000",
     "playwright_test": "playwright test",
-    "build": "npx tailwindcss -i ./src/style.css -o ./public/style.css",
-    "watch": "npx tailwindcss -i ./src/style.css -o ./public/style.css --watch"
+    "build": "npx tailwindcss -i ./src/styles.css -o ./public/style.css",
+    "watch": "npx tailwindcss -i ./src/styles.css -o ./public/style.css --watch"
   },
   "devDependencies": {
     "@playwright/test": "^1.22.2",
