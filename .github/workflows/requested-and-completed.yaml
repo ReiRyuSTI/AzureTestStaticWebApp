@@ -66,6 +66,13 @@ jobs:
                   }
                 },
                 {
+                  "type": "section",
+                  "text": {
+                    "type": "mrkdwn",
+                    "text": "https://thankful-mushroom-029df320f.2.azurestaticapps.net/"
+                  }
+                },
+                {
                   "type": "context",
                   "elements": [
                     {
