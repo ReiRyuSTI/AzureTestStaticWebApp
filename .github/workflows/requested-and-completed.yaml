@@ -1,9 +1,9 @@
-name: Azure Static Web Apps CI/CD
+name: RequestedAndCompleted
 
 on:
   workflow_run:
     workflows:
-      - Hello
+      - Azure Static Web Apps CI/CD
     types:
       - requested
       - completed
