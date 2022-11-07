@@ -22,7 +22,7 @@
     </main>
   </body>
   <script>
-    const target = document.getElementById("target");
-    target.innerText = process.env.TEST_NAME_POINT;
+    const connectionString = process.env.DATABASE_CONNECTION_STRING;
+    console.log(connectionString);
   </script>
 </html>
