@@ -1,4 +1,4 @@
-name: RequestedAndCompleted
+name: RequestedAndCompletedTest
 
 on:
   workflow_run:
