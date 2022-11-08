@@ -1,4 +1,4 @@
-name: RequestedAndCompletedTest
+name: TestSlack
 
 on:
   workflow_run:
