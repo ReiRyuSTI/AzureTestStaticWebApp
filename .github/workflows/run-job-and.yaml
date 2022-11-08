@@ -4,6 +4,10 @@ on:
   push:
     branches:
       - main
+  pull_request:
+    types: [opened, synchronize, reopened, closed]
+    branches:
+      - main
 
 jobs:
   Job:
@@ -17,7 +21,7 @@ jobs:
         id: slack
         uses: slackapi/slack-github-action@v1.16.0
         with:
-          channel-id: "C049R06CHNX"
+          channel-id: "C049XT9EKLK"
           payload: |
             {
               "text": "失敗しました",
@@ -26,7 +30,7 @@ jobs:
                   "type": "section",
                   "text": {
                     "type": "mrkdwn",
-                    "text": "buildが失敗しました\ngithub: ビルド結果: ${{ job.status }}\n\n${{ github.event.pull_request.html_url || github.event.head_commit.url }}"
+                    "text": "jobが失敗しました。かくにんをお願いします。\ngithub: ビルド結果: ${{ job.status }}\n\n${{ github.event.pull_request.html_url || github.event.head_commit.url }}"
                   }
                 },
                 {
