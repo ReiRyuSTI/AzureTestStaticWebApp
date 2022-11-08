@@ -54,9 +54,6 @@ jobs:
           name: onDemand
           path: pw-report/
 
-      - uses: actions/checkout@v2
-      - name: Random exit
-        run: exit $(($RANDOM%2))
       - name: Notify slack when job failed
         if: ${{ failure() }}
         id: slack
